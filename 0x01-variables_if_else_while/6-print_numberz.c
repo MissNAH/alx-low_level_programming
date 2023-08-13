@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 /**
- * main - Prints numbers from 0 - 9.
+ * main - prints alphabets without char and use putchar
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i;
+	int alphabets = '0';
 
-	for (i = 40; i < 58; i++)
+	while (alphabets <= '9')
 	{
-		putchar(i);
+		putchar(alphabets);
 	}
 	putchar('\n');
 	return (0);
