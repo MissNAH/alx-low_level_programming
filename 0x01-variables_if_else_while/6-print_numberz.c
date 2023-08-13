@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - prints alphabets without char and use putchar
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int alphabets = '0';
+	int num;
 
-	while (alphabets <= '9')
-	{
-		putchar(alphabets);
-	}
+	for (num = 0; num < 10; num++)
+		putchar((num % 10) + '0');
+
 	putchar('\n');
 	return (0);
 }
